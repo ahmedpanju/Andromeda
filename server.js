@@ -1,6 +1,6 @@
 var express  = require('express');
 var app      = express();
-var port     = process.env.PORT || 8080;
+var port = process.env.PORT || 8080
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
@@ -32,7 +32,7 @@ app.use(flash());
 
 require('./routes.js')(app, passport); 
 
-app.listen('8000', function() {
-    console.log("App is running on port 8000");
+app.listen(port, function() {
+    console.log("App is running on port " + port);
 });
 
