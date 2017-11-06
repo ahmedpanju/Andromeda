@@ -18,7 +18,9 @@ require('./config/passport')(passport);
 
 app.use(morgan('dev')); 
 app.use(cookieParser()); 
-app.use(bodyParser()); 
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs');
@@ -30,4 +32,7 @@ app.use(flash());
 
 require('./routes.js')(app, passport); 
 
-app.listen(port);
+app.listen('8000', function() {
+    console.log("App is running on port 8000");
+});
+
