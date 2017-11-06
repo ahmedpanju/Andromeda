@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <% include partials/head.ejs %>
+    </head>
+    <body>
+        <div class="container">
+            <% include partials/navbar.ejs %>  
+            <% include partials/sidebar.ejs %>
+            <button class="add_task">Add Task<i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+            <div class="add_task_box">
+                <form action="/addtask" method="post">
+                    <label>Title:</label><br>
+                    <input type="text" name="title"><br><br>
+                    <label>Description:</label><br>
+                    <textarea name="description"></textarea><br><br>
+                    <input type="submit" value="Add Task">
+                </form>
+            </div>
+        </div>
+        <script src="/script/<%= logic %>"></script>
+    </body>
+</html>
+

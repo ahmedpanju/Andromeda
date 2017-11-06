@@ -1,0 +1,22 @@
+{
+  "name": "task_manager",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-session": "*",
+    "method-override": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "passport": "*",
+    "passport-facebook": "*",
+    "passport-google-oauth": "*",
+    "passport-local": "*",
+    "passport-twitter": "*",
+    "path": "^0.12.7"
+  }
+}

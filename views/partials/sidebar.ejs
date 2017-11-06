@@ -1,0 +1,34 @@
+<div class="sidebar">
+    <ul>
+        <p>Tasks</p>
+        <% for (var i = 0; i < tasks.length; i++) { %>
+            <li><a href='task/<%= i + 1 %>'><%= tasks[i].title %></a></li>
+        <% } %>
+    </ul>
+</div>
+
+<style>
+    .sidebar {
+        width: 20%;
+        height: 90vh;
+        float: left; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: rgba(255, 204, 102, 0.5);
+    }
+    
+    .sidebar p {
+        font-family: Arial;
+        font-size: 25px;
+    }
+    
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+    
+    .sidebar ul li a{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+</style>

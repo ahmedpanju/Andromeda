@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(102, 140, 255);
+}
+
+.container, .container2 {
+    position: relative;
+    border-radius: 10px;
+    margin: auto;
+    width: 60%;
+    height: 350px;
+    background-color: rgba(255, 204, 102, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+}
+
+.container h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container .button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgb(102, 140, 255);
+    color: white;
+    position: absolute;
+}
+
+.login {
+    right: 30%;
+}
+
+.signup {
+    left: 30%;
+}
+
+.container2 {
+    padding: 10px;
+    height: 100px;
+    margin-top: 50px;
+}
+

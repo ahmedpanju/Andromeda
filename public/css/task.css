@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+button, input[type=submit] {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(255, 204, 102);
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    bottom: 20%;
+}
+
+.first {
+    right: 30%;
+}
+ 
+.second {
+    left: 30%;
+}
+
